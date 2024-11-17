@@ -1,0 +1,262 @@
+*{
+    padding: 0%;
+    margin: 0;    
+    font-family: "Roboto", sans-serif;
+    }
+:root {
+    --text-color: #000000;
+    --section-color: #ececec;
+    --main-color: #2a84ff;
+    --paragraph: #8b8b8b;
+    --border-color: #ececec;
+    --icon:black;
+    --box-shadow: rgb(0 0 0 / 24%) 0px 0px 23px -5px;
+}
+body.dark-mode {
+    --text-color: #fff;
+    --paragraph: #8b8b8b;
+    --section-color: #232625;
+    --border-color: #2f2f2f;
+    --icon:#fff;
+    --title-color: #c8c8c8;
+    --second-title-color: #fff;
+    --paragraph-color: #909090;
+    --section-color: #212121;
+    --section-color2: #171918;
+    --border-color: #525252;
+    --box-shadow: rgb(0 0 0 / 24%) 0px 0px 23px -5px;
+}
+
+/* main */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+    width: 100%; 
+    height: 91.3vh;
+}
+/* header */
+Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    width: 100%;
+}
+Header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+Header h2{
+    color: var(--text-color)
+}
+Header  .logo{
+    height: 70px;
+}
+Header  ul{
+    display: flex;
+    gap: 5px;   
+}
+Header   ul  li{
+    list-style: none;
+}
+Header   ul  li a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 30px 52px;
+}
+Header   svg{
+    color: var(--text-color);
+    font-size: 28px;
+    padding: 19px;
+    margin: 0 7px 0 150px;
+}
+Header  ul  li a:hover ,.active{
+    border-bottom: 2px solid  orange;
+}
+
+/* NavbarOne */
+.NavbarOne{
+    position: relative;
+    background: transparent;
+    height: 100%;
+    width: 66px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.NavbarOne .icons{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.NavbarOne .icons svg{
+    color: var(--icon);
+    font-size: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 6px;
+}
+.NavbarOne .icon a{
+    text-decoration: none;
+}
+.NavbarOne .icons svg:hover{
+    background: orange;
+}
+
+.NavbarOne .SCROOL{
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.NavbarOne .SCROOL svg{
+    background: orange;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 16px;
+    display: flex;
+}
+.NavbarOne  .SCROOL  h2{
+    color:var(--text-color);
+}
+
+
+
+
+
+/* content */
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+
+/* Swiper */
+.Swiper{
+    height: 100%;
+    width: 20%;
+}
+
+
+
+
+/* Posts */
+.Posts{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+.Posts img{
+width: 40%;
+animation: image 5s cubic-bezier(0.59, -0.1, 0.61, 1.18) infinite;
+}
+
+@keyframes image {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    }
+
+
+
+/* Holder */
+.Holder{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Navbar */
+.Navbar{
+    height: 100%;
+    width: 75px;
+    writing-mode: tb;
+    border-left: 2px solid var(--border-color);
+}
+.Navbar button{
+    height: 172.2px;
+    width: 75px;
+    font-size: 19px;
+    font-weight: 300;
+    border: none;
+    background: none;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.Navbar button.active{
+    background: orange;
+}
+.Navbar button:hover{
+    background: orange;
+}
+
+/* .Navbar   button:hover >  button:not(:hover) {
+    background: initial; استعادة الخلفية الأصلية */
+
+
+
+
+
+
+
+/* PostItem */
+.PostItem{
+display: flex;
+width: 90%;
+}
+/* PostContent */
+.PostContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 60%;
+}
+.PostContent p{
+    width: 60%;
+    font-size: 24px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #101014f7;
+    color: #ffffff;
+}
